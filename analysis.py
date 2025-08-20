@@ -25,8 +25,8 @@ def _(mo):
 def _(mo):
     mo.md(
         """
-    Dynamic Output
-    #The current number of points selected is 50.
+    # Dynamic Output
+    # The current number of points selected is 50.
     This markdown updates automatically when the slider value **changes**.
     """
     )

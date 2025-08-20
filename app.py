@@ -36,6 +36,7 @@ def _(n_points, np, plt):
     plt.gca()  # Return the current axes to display the plot
     return
 
+
 @app.cell
 def _(mo):
     mo.md(
@@ -46,6 +47,8 @@ def _(mo):
     """
     )
     return
+
+
 @app.cell
 def _(mo, n_points):
     # Dynamic markdown output based on the slider value
@@ -57,6 +60,13 @@ def _(mo, n_points):
     This markdown updates automatically when the slider value changes.
     """)
     return
+
+
+@app.cell(hide_code=True)
+def _(mo):
+    mo.md(r""" """)
+    return
+
 
 if __name__ == "__main__":
     app.run()

@@ -36,6 +36,17 @@ def _(n_points, np, plt):
     plt.gca()  # Return the current axes to display the plot
     return
 
+@app.cell
+def _(mo, n_points):
+    # Dynamic markdown output based on the slider value
+    mo.md(f"""
+    # Dynamic Output
+
+    The current number of points selected is **{n_points.value}**.
+
+    This markdown updates automatically when the slider value changes.
+    """)
+    return
 
 if __name__ == "__main__":
     app.run()

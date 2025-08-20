@@ -39,7 +39,7 @@ def _(n_points, np, plt):
 @app.cell
 def _(mo):
     mo.md(
-        r"""
+        """
     Dynamic Output
     The current number of points selected is 50.
     This markdown updates automatically when the slider value changes.
